@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/login.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <title>Resume Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="avatar">
+            <img src="../Images/Avatar.png"/>
+        </div>
+        <div class="wrapper">
+            <p class="target"> Welcome Back Rajesh..!</p>
+          </div>
+        <h1 class="heading">User Login</h1>
+        <form class="login_form" name="form">
+            <div id="error">Invalid Username / Password</div>
+            <div class="label">User Name</div>
+            <input type="email" id="username" name="username" placeholder="Email Id" required>
+            <div class="label label2">Password</div>
+            <input type="password" id="password" name="password" placeholder="Password" required autocomplete>
+            <button id="submitBtn">Log in</button>
+            <p id="help-text"></p>
+        </form>
+    </div>
+    
+    <script src="../JavaScript/login.js"></script>
+    
+</body>
+</html>

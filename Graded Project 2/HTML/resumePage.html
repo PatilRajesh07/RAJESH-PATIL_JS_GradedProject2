@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../CSS/resumePage.css" />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <title>Resume Viewer</title>
+  </head>
+  <body>
+    <div class="container">
+      
+        <div class="actions-container">
+        <button
+          id="previousBtn"
+          class="small-btns"
+          onclick="previousBtnClick()"
+        ><i class='fas fa-angle-double-left'></i> 
+          Previous
+        </button>
+        <input
+          class="searchInput"
+          id="search"
+          type="text"
+          placeholder="Search for keywords to filter the resume"
+          name="search"
+        />
+        <button id="nextBtn" class="small-btns" onclick="nextBtnClick()">
+          Next <i class='fas fa-angle-double-right'></i>
+        </button>
+      </div>
+
+      <div class="details-container">
+        <div id="loader" class="loader"></div>
+        <div id="noResultContainer" class="no-result">
+          <img
+            src="../Images/error.png"
+            alt="Avatar"
+            class="no-result-image"
+          />
+          <p class="no-result-text">
+            <b>Invalid search or No applications for this job</b>
+          </p>
+        </div>
+        <div id="resumeContainer" class="resume-container">
+          <div class="resume-header">
+            <div class="hidden"></div>
+            <div class="header-center">
+              <p id="name" class="name"></p>
+              <p class="position">
+                Applied For : <span id="appliedFor"> Dummy</span>
+              </p>
+            </div>
+            <img
+              src="../Images/candidate.png"
+              alt="Avatar"
+              class="candidate-image"
+            />
+          </div>
+          <div class="resume-body">
+
+            <div class="basics">
+              <div class="personal-info">
+                <p class="titles">Personal Information</p>
+                <p id="phone"></p>
+                <p id="email"></p>
+                <a href="" id="linkedin">LinkedIn</a>
+              </div>
+              <div class ="location">
+                <p class="titles">Location</p>
+                <p id="address"></p>
+                <p id="city"></p>
+                <p id="state"></p>
+                <p id="postalCode"></p>
+              </div>
+              <div class="tech-specialization">
+                <p class="titles">Technical Specialization</p>
+                <p id="skillName"></p>
+              </div>
+              <div class="tech-skill">
+                <p class="titles">Technical Skills</p>
+                <p id="technicalSkills"></p>
+              </div>
+              <div class="">
+                <p class="titles">Hobbies</p>
+                <p id="hobbies"></p>
+              </div>
+            </div>
+
+            <div class="other-details">
+              <h2 class="work-ex">Work Experience in previous company</h2>
+              <p id="previousCompanyDetails"></p>
+              <h2>Projects</h2>
+              <p id="projectDetails"></p>
+              <h2>Education</h2>
+              <p id="education"></p>
+
+              <h2>Internship</h2>
+              <p id="internship"></p>
+
+              <h2>Achievements</h2>
+              <p id="achievements"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../JavaScript/resumePage.js" defer></script>
+  </body>
+</html>
